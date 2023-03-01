@@ -162,4 +162,6 @@ class ExamplesNumber{
     Fraction pointOne = new Fraction(1,10);
     Fraction pointTwo = new Fraction(1,5);
     Fraction pointThree = new Fraction(3,10);
-    Fraction result = pointOne.add(pointTwo);
+    String explore3 = pointOne.add(pointTwo).add(pointThree).toString();//expect "0.6"
+    String explore4 = pointOne.add(pointTwo.add(pointThree)).toString();//expect "0.6"
+}
